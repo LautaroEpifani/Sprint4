@@ -42,7 +42,7 @@ function orderAlphabetically(movies) {
 
 // Exercise 5: Order by year, ascending
 function orderByYear(movies) {
-  const orderMovies = movies.filter((movie) => movie);
+  const orderMovies =  movies.map(movie => ({...movie}));
 
   const result = orderMovies.sort(function (a, b) {
     if (a.year > b.year) return 1;
@@ -84,7 +84,7 @@ function moviesAverageByCategory(movies) {
 
 // Exercise 7: Modify the duration of movies to minutes
 function hoursToMinutes(movies) {
-  const movieduration = movies.filter((movie) => movie);
+  const movieduration = movies.map(movie => ({...movie}));
 
   for (i = 0; i < movieduration.length; i++) {
     const hours = movieduration[i].duration.split('h');
