@@ -36,6 +36,13 @@
     "trailingComma": "none"
   },
   "dependencies": {
-    "browserify": "^17.0.0"
+    "@babel/helper-plugin-utils": "^7.20.2",
+    "@babel/parser": "^7.20.3",
+    "@babel/types": "^7.20.2",
+    "browserify": "^17.0.0",
+    "node": "^19.1.0",
+    "pretty-format": "^29.3.1",
+    "runner": "^4.0.0",
+    "test": "^3.2.1"
   }
 }
